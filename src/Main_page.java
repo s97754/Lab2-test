@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Main_page {
+public class Main_page
+{
 
     private String current_user;
 
@@ -8,7 +9,8 @@ public class Main_page {
         current_user = u;
     }
 
-    public void showPage (){
+    public void showPage ()
+    {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to application main page user " +current_user);
@@ -16,11 +18,13 @@ public class Main_page {
         sc.nextLine();
     }
 
-    public void setUser (String usr) {
+    public void setUser (String usr)
+    {
         current_user = usr;
     }
 
-    public String getUser () {
+    public String getUser ()
+    {
         return current_user;
     }
 }
