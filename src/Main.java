@@ -11,6 +11,14 @@ public class Main {
             this.password = password;
         }
 
+        public boolean confirmPassword(String password) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Wpisz hasło: ");
+            String inputPassword = scanner.nextLine();
+            return password.equals(inputPassword);
+        }
+
         public String getUsername() {
             return username;
         }
@@ -27,13 +35,6 @@ public class Main {
             this.password = password;
         }
 
-        public boolean confirmPassword(String password) {
-            Scanner scanner = new Scanner(System.in);
-
-            System.out.print("Wpisz hasło: ");
-            String inputPassword = scanner.nextLine();
-            return password.equals(inputPassword);
-        }
     }
 
     public static void main(String[] args) {
