@@ -1,15 +1,12 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Main
-{
-    public static class Login
-    {
+public class Main  {
+    public static class Login {
         String username;
         String password;
 
-        public boolean tryLogin()
-        {
+        public boolean tryLogin() {
             Scanner sc = new Scanner(System.in);
 
             System.out.print("Username: ");
@@ -20,43 +17,35 @@ public class Main
             return Objects.equals(this.username, username) && Objects.equals(this.password, password);
         }
 
-        public Login(String username, String password)
-        {
+        public Login(String username, String password) {
             this.username = username;
             this.password = password;
         }
 
-        public String getUsername()
-        {
+        public String getUsername() {
             return username;
         }
 
-        public void setUsername(String username)
-        {
+        public void setUsername(String username) {
             this.username = username;
         }
 
-        public String getPassword()
-        {
+        public String getPassword() {
             return password;
         }
 
-        public void setPassword(String password)
-        {
+        public void setPassword(String password) {
             this.password = password;
         }
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Login login = new Login("Krzysztof", "123");
 
-        if(login.tryLogin())
-        {
+        if(login.tryLogin()) {
             System.out.println("Zalogowano.");
         }
-        else
-        {
+        else {
             System.out.println("Logowanie nieudane.");
         }
     }
